@@ -275,6 +275,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\MigrationCliInput.cs" />
+    <Compile Include="Migrations\RepublishAll.cs" />
+    <Compile Include="Migrations\MultiUrlPickerMigration.cs" />
     <Compile Include="Migrations\NestedContentMigration.cs" />
     <Compile Include="Migrations\ContentPickerMigration.cs" />
     <Compile Include="Migrations\MediaPickerMigration.cs" />

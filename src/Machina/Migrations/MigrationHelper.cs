@@ -14,6 +14,12 @@ namespace Machina.Migrations
             Console.WriteLine($"{property.Alias} => {property.Value}");
         }
 
+        public static void WriteOutBoilerplate(IContent content, Property property, string propertyValue)
+        {
+            Console.WriteLine($"Examining {content.Id} '{content.Name}'...");
+            Console.WriteLine($"{property.Alias} => {propertyValue}");
+        }
+
         public static bool ShouldSkip(string propertyValue)
         {
             return string.IsNullOrEmpty(propertyValue) || propertyValue.Contains("umb://");
